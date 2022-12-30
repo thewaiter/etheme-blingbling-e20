@@ -595,23 +595,44 @@ group {
 	    }
 	 }
       }
+	text { name: "spacer";
+	    effect: SHADOW BOTTOM;
+	    scale: 1;
+	    desc { color: 0 0 0 0;
+		    rel1.offset: 4 4;
+		    rel2.offset: -5 -5;
+		    text {
+			    source: "e.text.label";
+			    text_source: "e.text.label";
+			    min: 1 1;
+		    }
+		    link.base: "e,origin,center" "e";
+		    link.transition: SINUSOIDAL 0.1 CURRENT;
+	    }
+	    desc { "left"; inherit: "default";
+		    align: 0.0 0.5;
+		    link.base: "e,origin,left" "e";
+		    link.transition: SINUSOIDAL 0.1 CURRENT;
+	    }
+	    desc { "right"; inherit: "default";
+		    align: 1.0 0.5;
+		    link.base: "e,origin,right" "e";
+		    link.transition: SINUSOIDAL 0.1 CURRENT;
+	    }
+    }
       part {      
 	 name: "e.text.label";
 	 type: TEXT;
-	 effect: SOFT_SHADOW;                  
+	 effect: SOFT_SHADOW;
 	 mouse_events: 0;
-   scale:1;
+	 scale:1;
 	 description {
 	    state: "default" 0.0;
 	    align: 0.5 0.5;
-	    rel1 {
-               relative: 0.0  1.0;
-	       offset:   0    -1;
-	    }
-	    rel2 {
-               relative: 1.0  1.0;
-	       offset:   -1    -1;
-	    }
+	    fixed: 0 1;
+	    rel1.to_x: "spacer";
+	    rel2.to_x: "spacer";
+	    rel1.relative: 0 1;
 	    color: 255 255 255 0;
 	    color3: 0 0 0 0;
             color_class: "module_label";
