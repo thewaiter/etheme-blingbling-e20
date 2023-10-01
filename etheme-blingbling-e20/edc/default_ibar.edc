@@ -12,7 +12,7 @@ group {
       item: "raise_on_hilight" "0"; // 1 or 0 if u want an icon holder to raise when the mouse (or keyboard) hilights it
       //	 item: "item_list" "item item2 item3";
    }
-   images.image: "led_tiny.png" COMP;
+   images.image: "elm-check_base.png" COMP;
    parts {
       part {
 	 name:          "item_clip";
@@ -73,7 +73,7 @@ group {
               visible: 1;
            }
          }
-         part { name: "e.text.label"; type: TEXT; mouse_events: 0;
+      part { name: "e.text.label"; type: TEXT; mouse_events: 0;
            effect: NONE;
            scale: 1;
               description { state: "default" 0.0;
