@@ -291,7 +291,7 @@ group {
 	 name:           "title2";
 	 type:           TEXT;
 	 mouse_events:   0;
-   scale: 1;
+	 scale: 1;
 	 description {
 	    state: "default" 0.0;
 	    align: 1.0 0.0;
@@ -1161,6 +1161,38 @@ group {
 	    }
 	    rel2 {
 	       to:    "e.swallow.icon";
+	    }
+	    color: 0 0 0 0;
+	 }
+      }
+      part {
+	 name:          "e.event.resize.tr";
+	 type:          RECT;
+	 description {
+	    state:    "default" 0.0;
+	    rel1 {
+	       relative: 1.0  0.0;
+	       offset:   -6    -2;
+	    }
+	    rel2 {
+	       relative: 1.0  0.0;
+	       offset:   -1    16;
+	    }
+	    color: 0 0 0 0;
+	 }
+      }
+      part {
+	 name:          "e.event.resize.tl";
+	 type:          RECT;
+	 description {
+	    state:    "default" 0.0;
+	    rel1 {
+	       relative: 0.0  0.0;
+	       offset:   -2   -2;
+	    }
+	    rel2 {
+	       relative: 0.0  0.0;
+	       offset:   6    16;
 	    }
 	    color: 0 0 0 0;
 	 }
