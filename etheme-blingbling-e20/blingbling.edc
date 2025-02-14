@@ -150,4 +150,5 @@ collections {
 #include "edc/default_xkbswitch.edc"
 #include "edc/default_notification.edc"
 #include "edc/default_edgebindings.edc"
+#include "edc/default_wallpaper.edc"
 }
