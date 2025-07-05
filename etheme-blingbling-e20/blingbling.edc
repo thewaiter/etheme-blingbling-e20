@@ -5,8 +5,9 @@ data {
    item: "theme/license"  "GPL";
    item: "gtk-theme"      "MokshaBlingBling";
    item: "icon-theme"     "MokshaBlingBling";
-   item: "version"        "110"; // theme api version. from 1.10 on we will check version to avoid compat issues
+   item: "version"        "125"; // theme api version. from 1.10 on we will check version to avoid compat issues
 }
+efl_version: 1 25;
 
 fonts {
    font: "Vera.ttf"   "Edje-Vera";
@@ -20,12 +21,11 @@ spectra {
     color: 0 0 0 255 1;
     color: 0 0 0 0 1;
   }
-   spectrum 
-     {
-	name: "rubberband";
-	color: 255 231 157 127 1;
-	color: 255 249 231 127 1;
-     }
+  spectrum {
+    name: "rubberband";
+    color: 255 231 157 127 1;
+    color: 255 249 231 127 1;
+   }
 }
 #endif
 
